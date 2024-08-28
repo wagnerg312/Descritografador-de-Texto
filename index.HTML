@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/Style/style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="/assets/logo_Alura.png" alt="Logo Alura" class="logoImg">
+    </div>
+    <section class="elements">
+        <section class="elementInputAndButtons">
+            <div class="elementInput">
+                <textarea id="inputText" name='opcao' class="inputText" placeholder="Digite seu texto"></textarea>
+            </div>
+            <section class="elementButtons">
+                    <div class="textInformation">
+                        <img src="/assets/image_exclamacao.png" class="iconInformation" alt="Icone de informação">
+                        <span class="information">Apenas letras minúsculas e sem acento.</span>
+                    </div>
+                    <div class="buttons">
+                        <button id="encrypt" class="button">Criptografar</button>
+                        <button id="decrypt" class="button">Descriptografar</button>
+                    </div>
+            </section>
+        </section>
+        <section class="elementForm">
+            <textarea class="inputForm" id="inputForm" style="display: none;"></textarea>
+            <img src="/assets/imagem1.png" alt="Ilustração de Pesquisa" id="imgIcon" class="imgIluster">
+            <div class="informationForm">
+                <span id="textOne" class="textOne">Nenhuma mensagem encontrada</span>
+                <span id="textTwo" class="textTwo">Digite um texto que você deseja criptografar ou descriptografar</span>
+            </div>
+            <button class="buttonForm" id="buttonForm" style="display: none;">Copiar</button>
+        </section>
+    </section>
+    <footer class="footer">
+        <p>Desenvolvido por <a href="https://github.com/wagnerg312" target="_blank">Wagner Moura</a> &copy; 2024</p>
+    </footer>
+    <script src="/Style/aap.js"></script>
+</body>
+</html>

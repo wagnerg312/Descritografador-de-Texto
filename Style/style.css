@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+}
+
+:root {
+    --CorPrimeira: #FFE9D0;
+    --CorSegunda: #B1AFFF;
+    --CorTerceira: #BBE9FF;
+    --CorQuarta: #FFFED3;
+    --CorQuinta: #495057;
+    --CorSexta: #343A40;
+    --CorSetima: #0A3871;
+}
+
+body {
+    background-color: var(--CorPrimeira);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logoImg {
+    margin: 20px 0px 0px 0px;
+}
+
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.elementInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 300px;
+    height: 180px;
+    margin-top: 30px;
+    
+}
+
+.inputText {
+    width: 260px;
+    height: 50px;
+    padding: 8px;
+    font-size: 1rem;
+    resize: none;
+    border: 0;
+    outline: 0;
+    border-radius: 32px;
+}
+
+.elementButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.iconInformation{
+    width: 10px;
+}
+
+.textInformation{
+    display: flex;
+    padding: 5px 0px;
+}
+
+.information {
+    font-size: 0.7rem;
+    color: var(--CorQuinta);
+    font-family: sans-serif;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    width: 110px;
+    height: 30px;
+    border-radius: 24px;
+    font-size: 0.8rem;
+    background-color: var(--CorSegunda);
+    color: var(--CorQuarta);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--CorTerceira);
+    color:var(--CorQuarta) ;
+    transition: 1s;
+}
+
+.elementForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--CorQuarta);
+    height: 420px;
+    width: 300px;
+    border-radius: 32px;
+}
+
+.inputForm {
+    background-color: transparent;
+    color: var(--CorQuinta);
+    margin: 20px;
+    width: 260px;
+    height: 320px;
+    resize: none;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.imgIluster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px; 
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.informationForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.textOne{
+    font-size: 0.9rem;
+    color: var(--CorSexta);
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.textTwo {
+    width: 300px;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    color: var(--CorQuinta);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buttonForm {
+    border: 1px solid var(--CorSetima);
+    border-radius: 24px;
+    color: var(--CorSetima);
+    width: 250px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.buttonForm:hover {
+    background-color: var(--CorQuarta);
+    transition: 1s;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--CorSegunda);
+    font-family: sans-serif;
+    position: relative;
+    bottom: 0;
+}
+
+p {
+    color: var(--CorQuarta);
+}
+
+p > a {
+    color: var(--CorQuarta);
+    text-decoration: none;
+}
+
+p > a:hover {
+    color: var(--CorPrimeira);
+}
+
+@media screen and (min-width: 564px){
+    .logoImg {
+        width: 150px;
+    }
+
+    .elementInput {
+        width: 350px;
+    }
+
+    .inputText {
+        width: 290px;
+        font-size: 1.1rem;
+    }
+    
+    .textInformation {
+        gap: 10px;
+    }
+
+    .iconInformation{
+        width: 20px;
+        height: 15px;
+        padding-bottom: 2px;
+    }
+    
+    .information {
+        font-size: 0.8rem;
+    }
+
+    .buttons {
+        gap: 30px;
+    }
+    
+    .button {
+        width: 130px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .elementForm {
+        width: 350px;
+    }
+
+    .inputForm {
+        width: 290px;
+        font-size: 1.1rem;
+    }
+
+    .textOne{
+        font-size: 1rem;
+    }
+    
+    .textTwo {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1033px){
+    .logo {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .elements {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 0px;
+    }
+    
+    .elementInputAndButtons {
+        display: flex;
+        flex-direction: column;
+        gap: 150px 0;
+    }
+    
+    .elementInput {
+        padding: 10px 20px;
+        width: 460px;
+        height: 280px;
+    }
+    
+    .inputText {
+        width: 390px;
+        height: 100px;
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+    
+    .textInformation{
+        gap: 5px;
+    }
+    
+    .information {
+        font-size: 1rem;
+    }
+    
+    .buttons {
+        gap: 40px;
+    }
+    
+    .button {
+        width: 200px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+    
+    .elementForm {
+        height: 600px;
+        width: 400px;
+    }
+    
+    .inputForm {
+        width: 390px;
+        height: 480px;
+        padding: 10px 30px;
+    }
+    
+    .imgIluster {
+        width: 300px;
+    }
+
+    .textOne{
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    
+    .textTwo {
+        width: 350px;
+        font-size: 1.1rem;
+    }
+    
+    .buttonForm {
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1385px){
+    .elements {
+        gap: 150px;
+    }
+    
+    .elementInputAndButtons {
+        gap: 0px 0;
+        margin-bottom: 70px;
+    }
+    
+    .elementInput {
+        margin-bottom: 120px;
+        margin-left: 45px;
+    }
+    
+    .inputText {
+        width: 500px;
+        height: 280px;
+        padding: 20px;
+        font-size: 2rem;
+    }
+    
+    .buttons {
+        bottom: 0px;
+        gap: 50px;
+    }
+    
+    .button {
+        width: 250px;
+        font-size: 1.2rem;
+    }
+    
+    .elementForm {
+        margin-bottom: 50px;
+        height: 550px;
+        width: 500px;
+    }
+    
+    .inputForm {
+        width: 450px;
+        height: 430px;
+        font-size: 2rem;
+    }
+    
+    .imgIluster {
+        margin-bottom: 100px;
+    }
+}
